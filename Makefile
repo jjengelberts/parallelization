@@ -1,4 +1,4 @@
-all: parallelization.pdf
+all: clean parallelization.pdf
 
 parallelization.pdf: $(FIGURES)
 	pdflatex parallelization

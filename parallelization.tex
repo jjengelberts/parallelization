@@ -105,11 +105,12 @@
     \subsection{Example}
     \begin{frame}
         \frametitle{OpenMP - Example}
+        Source code can be viewed \href{https://github.com/jjengelberts/parallelization/blob/master/examples/example_openmp.c}{\underline{here}}
         \begin{itemize}
-            \item Introduction to  \LaTeX{}  
-            \item Course 2 
-            \item Termpapers and presentations with \LaTeX{}  
-            \item Beamer class
+            \item Program has two parallel regions
+            \item Program still behaves as a serial program
+            \item Variable my\_number is know to all threads
+            \item Memory location for my\_number is identical for each process
         \end{itemize} 
     \end{frame}
 
@@ -129,11 +130,12 @@
     \subsection{Example}
     \begin{frame}
         \frametitle{MPI - Example}
+        Source code can be viewed \href{https://github.com/jjengelberts/parallelization/blob/master/examples/example_mpi.c}{\underline{here}}
         \begin{itemize}
-            \item Introduction to  \LaTeX{}  
-            \item Course 2 
-            \item Termpapers and presentations with \LaTeX{}  
-            \item Beamer class
+            \item Program needs MPI\_Init, and MPI\_Finalize
+            \item Program is parallel as a whole
+            \item Variable my\_number needs to be broadcast 
+            \item Memory location for my\_number is different for each process
         \end{itemize} 
     \end{frame}
 
